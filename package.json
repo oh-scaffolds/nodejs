@@ -5,7 +5,7 @@
   "keywords": [
   ],
   "homepage": "https://github.com/{{user.name}}/{{project.name}}",
-  "author": "{{user.name}} <{{user.email}}>",
+  "author": "{{user.name}} <{{user.email| Please provide email| email}}>",
   "contributors": [
     "{{user.name}} <{{user.email}}> "
   ],
@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "eslint": "^2.8.0",
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
     "istanbul": "*",
     "mocha": "*"
   },

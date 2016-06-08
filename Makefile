@@ -14,10 +14,13 @@ help:
 	echo "make test       - Lint sources and run all tests"
 	echo "make publish    - Set new version tag and publish npm package"
   echo "make todo       - Find and list all TODOs"
+  echo "make watch      - Watch files and compile with babel"
 
 lint:
 	./node_modules/.bin/eslint .
 
+watch:
+  ./node_modules/.bin/babel -w -d lib src
 
 test: lint
 	@node -e "require('./package.json')"
